@@ -35,10 +35,8 @@ env:
   ECR_REPOSITORY: wonjun-prac/aws-ecs-cicd         
   ECS_SERVICE: project-cicd-service                 
   ECS_CLUSTER: cicd-cluster
-  ECS_TASK_DEFINITION: .github/workflows/project-01-task-revision1.json # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: project-cicd-container           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
+  ECS_TASK_DEFINITION: .github/workflows/project-cicd-task-revision1.json 
+  CONTAINER_NAME: project-cicd-container  
 
 permissions:
   contents: read
